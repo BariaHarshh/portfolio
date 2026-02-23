@@ -11,7 +11,7 @@ function Navbar() {
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4 text-white">
         
         <h1 className="text-xl font-bold text-blue-500">
-          Harsh.dev
+          Baria Harsh Ashokbhai
         </h1>
 
         <div className="space-x-6 hidden md:flex">
