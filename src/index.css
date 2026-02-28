@@ -1,6 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ── CSS Custom Properties ── */
+:root {
+  --teal: #2dd4bf;
+  --teal-dim: rgba(45, 212, 191, 0.15);
+  --orange: #f97316;
+  --orange-dim: rgba(249, 115, 22, 0.15);
+  --navy-dark: #050d1a;
+  --navy-mid: #0a1628;
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+/* ── Global Reset ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background: var(--navy-dark);
+  color: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: initial;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--navy-dark); }
+::-webkit-scrollbar-thumb { background: rgba(45, 212, 191, 0.25); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(45, 212, 191, 0.45); }
+
+/* ── Mobile menu button visibility ── */
+@media (max-width: 767px) {
+  .mobile-menu-btn {
+    display: flex !important;
+  }
 }
