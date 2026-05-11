@@ -2,7 +2,7 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useState, useEffect, useMemo, useRef } from "react";
 import tdsImage from "./assets/images/TDS_project_photo.jpeg";
 import character from "./assets/images/character.png";
-import demoVideo from "./assets/videos/project_demo.mp4";
+import demoVideo from "./assets/videos/Project_demo.mp4";
 
 /* ═══════════════════════════════════════════════════════════════
    Design Tokens
